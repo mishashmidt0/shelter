@@ -290,4 +290,129 @@ body {
   color: #545454;
 }
 
+.donation {
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 180px 100px 180px;
+}
+.donation img {
+  margin-left: -20px;
+}
+.donation div {
+  margin-left: 25px;
+}
+.donation div h2 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+.donation div p {
+  margin-top: 20px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  /* identical to box height, or 17px */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  /* color-dark-l */
+  color: #545454;
+}
+.donation div .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 0 0;
+  width: 349px;
+  height: 43px;
+  padding: 0 0;
+  /* color-primary */
+  background: #F1CDB3;
+  border-radius: 9px;
+}
+.donation div .card img {
+  margin: 0 15px 0 0;
+}
+.donation div .card p {
+  margin: 0;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  /* identical to box height, or 23px */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  /* color-dark-l */
+  color: #545454;
+}
+.donation div .tiny_text {
+  margin-top: 20px;
+  font-family: "Arial";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* or 150% */
+  display: flex;
+  align-items: center;
+  /* color-dark-m */
+  color: #B2B2B2;
+}
+
+.footer {
+  padding: 40px 40px 0 40px;
+  background-image: url("./src/assets/shelter/footer-background.png");
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer_block {
+  margin-top: 20px;
+}
+.footer .footer_block h3 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  /* or 45px */
+  letter-spacing: 0.06em;
+  /* color-light-xl */
+  color: #FFFFFF;
+}
+.footer .footer_block .footer_data {
+  margin: 38px 13px 0 0;
+}
+.footer .footer_block .footer_data a {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #F1CDB3;
+}
+.footer .footer_block .footer_data a img {
+  margin-right: 20px;
+}
+.footer .footer_block .footer_data a p {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  /* identical to box height, or 23px */
+  letter-spacing: 0.06em;
+  /* color-primary */
+  color: #F1CDB3;
+}
+
 /*# sourceMappingURL=style.css.map */
