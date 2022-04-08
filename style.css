@@ -48,6 +48,8 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 160%;
+}
+.house .header .header_navigation li a {
   color: #CDCDCD;
 }
 .house .header .header_navigation li a:visited {
@@ -231,6 +233,61 @@ body {
 .pets .arrow_right {
   position: relative;
   top: 21px;
+}
+
+.help {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 80px 100px 80px;
+}
+.help h2 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+.help div {
+  width: 100%;
+}
+.help div .bottom_ul {
+  margin: 0 13px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.help div .top_ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 56px 47px;
+}
+.help div li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.help div li img {
+  margin-bottom: 30px;
+}
+.help div li p {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #545454;
 }
 
 /*# sourceMappingURL=style.css.map */

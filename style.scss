@@ -52,7 +52,10 @@ body {
         font-weight: 400;
         font-size: 15px;
         line-height: 160%;
-        color: #CDCDCD;
+
+        a {
+          color: #CDCDCD;
+        }
 
         a:visited {
           color: #CDCDCD
@@ -268,5 +271,69 @@ body {
   .arrow_right {
     position: relative;
     top: 21px;
+  }
+}
+
+.help {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 80px 100px 80px;
+
+  h2 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+  }
+
+  div {
+    width: 100%;
+
+    .bottom_ul {
+      margin: 0 13px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .top_ul {
+      display: flex;
+      justify-content: space-between;
+      margin: 56px 47px;
+
+
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: #545454;
+      }
+    }
   }
 }
