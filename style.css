@@ -107,6 +107,12 @@ body {
   bottom: 0px;
   background: #F1CDB3;
   border-radius: 100px;
+  transition: 0.5s;
+}
+.house .house_container div .house_container_text button:hover {
+  background: rgba(0, 0, 0, 0);
+  color: #F1CDB3;
+  box-shadow: inset 0 0 0 3px #292929;
 }
 
 .about {
@@ -169,6 +175,25 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.pets .pets_container .arrow_right,
+.pets .pets_container .arrow_left {
+  cursor: pointer;
+  border: 4px solid #F1CDB3;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pets .pets_container .arrow_right svg,
+.pets .pets_container .arrow_left svg {
+  transition: 0.5s;
+}
+.pets .pets_container .arrow_right svg:hover,
+.pets .pets_container .arrow_left svg:hover {
+  fill: #F1CDB3;
+}
 .pets .pets_container .block_pets {
   margin: 0 16px;
   width: 270px;
@@ -210,6 +235,12 @@ body {
   line-height: 130%;
   letter-spacing: 0.06em;
   color: #292929;
+  transition: 0.5s;
+}
+.pets .pets_container .block_pets button:hover {
+  background: #292929;
+  color: #ffffff;
+  box-shadow: inset 0 0 0 3px #F1CDB3;
 }
 .pets .pets_button {
   margin-top: 77px;
@@ -228,6 +259,12 @@ body {
   line-height: 130%;
   letter-spacing: 0.05em;
   color: #292929;
+  transition: 0.5s;
+}
+.pets button:hover {
+  background: #292929;
+  color: #F1CDB3;
+  box-shadow: inset 0 0 0 3px #F1CDB3;
 }
 .pets .arrow_left,
 .pets .arrow_right {
@@ -276,6 +313,20 @@ body {
 }
 .help div li img {
   margin-bottom: 30px;
+}
+.help div li svg {
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: 0.5s;
+}
+.help div li svg path {
+  transition: 0.5s;
+}
+.help div li svg:hover {
+  transform: rotate(25deg);
+}
+.help div li svg:hover path {
+  fill: #ffd700;
 }
 .help div li p {
   font-family: "Georgia";
@@ -399,9 +450,13 @@ body {
   justify-content: space-evenly;
   align-items: center;
   color: #F1CDB3;
+  transition: 0.5s;
 }
-.footer .footer_block .footer_data a img {
+.footer .footer_block .footer_data a svg {
   margin-right: 20px;
+}
+.footer .footer_block .footer_data a svg path {
+  transition: 0.5s;
 }
 .footer .footer_block .footer_data a p {
   font-family: "Georgia";
@@ -413,6 +468,17 @@ body {
   letter-spacing: 0.06em;
   /* color-primary */
   color: #F1CDB3;
+}
+.footer .footer_block .footer_data a:hover {
+  padding: 10px;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+}
+.footer .footer_block .footer_data a:hover svg path {
+  fill: #FFFFFF;
+}
+.footer .footer_block .footer_data a:hover p {
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */
