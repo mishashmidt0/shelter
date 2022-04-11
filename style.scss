@@ -511,18 +511,24 @@ body {
     margin-top: 20px;
 
     h3 {
-      font-family: 'Georgia';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 35px;
-      line-height: 130%;
-      /* or 45px */
-
-      letter-spacing: 0.06em;
+      font: 20px/24px fantasy {
+        weight: bold;
+      }
+      content: "Foo " + Bar;
+      //color: mix(red, blue);
+      //font-family: 'Georgia';
+      //font-style: normal;
+      //font-weight: 400;
+      //font-size: 35px;
+      //line-height: 130%;
+      ///* or 45px */
+      //
+      //letter-spacing: 0.06em;
 
       /* color-light-xl */
 
-      color: #FFFFFF;
+      //color: #FFFFFF;
+
     }
 
     .footer_data {

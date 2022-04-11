@@ -432,15 +432,10 @@ body {
   margin-top: 20px;
 }
 .footer .footer_block h3 {
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 130%;
-  /* or 45px */
-  letter-spacing: 0.06em;
+  font: 20px/24px fantasy;
+  font-weight: bold;
+  content: "Foo Bar";
   /* color-light-xl */
-  color: #FFFFFF;
 }
 .footer .footer_block .footer_data {
   margin: 38px 13px 0 0;
