@@ -1,23 +1,20 @@
 @import "src/css/null.css";
-body {
-  background-color: #5C5C5C;
+.house {
+  background-image: url("./src/assets/start-screen-gradient-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.wrapper {
+.house .wrapper_house {
   width: 1280px;
   margin: auto;
 }
-
-.house {
-  background-image: url("./src/assets/start-screen-gradient-background.jpg");
-}
-.house .header {
+.house .wrapper_house .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 60px 40px;
 }
-.house .header h2 {
+.house .wrapper_house .header h2 {
   font-family: "Georgia";
   font-size: 32px;
   font-weight: 400;
@@ -26,7 +23,10 @@ body {
   text-align: left;
   color: #F1CDB3;
 }
-.house .header p {
+.house .wrapper_house .header h2 a {
+  color: #F1CDB3;
+}
+.house .wrapper_house .header p {
   margin-top: 10px;
   font-family: "Arial";
   font-style: normal;
@@ -38,10 +38,10 @@ body {
   letter-spacing: 0.1em;
   color: #FFFFFF;
 }
-.house .header .header_navigation {
+.house .wrapper_house .header .header_navigation {
   display: flex;
 }
-.house .header .header_navigation li {
+.house .wrapper_house .header .header_navigation li {
   margin-left: 35px;
   font-family: "Arial";
   font-style: normal;
@@ -49,27 +49,27 @@ body {
   font-size: 15px;
   line-height: 160%;
 }
-.house .header .header_navigation li a {
+.house .wrapper_house .header .header_navigation li a {
   color: #CDCDCD;
 }
-.house .header .header_navigation li a:visited {
+.house .wrapper_house .header .header_navigation li a:visited {
   color: #CDCDCD;
 }
-.house .header .header_navigation li:hover a {
+.house .wrapper_house .header .header_navigation li:hover a {
   color: #FAFAFA;
   border-bottom: solid 4px #F1CDB3;
 }
-.house .house_container {
+.house .wrapper_house .house_container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
 }
-.house .house_container div .house_container_text {
+.house .wrapper_house .house_container div .house_container_text {
   position: relative;
   bottom: 54px;
 }
-.house .house_container div .house_container_text h1 {
+.house .wrapper_house .house_container div .house_container_text h1 {
   max-width: 310px;
   font-family: "Georgia";
   font-style: normal;
@@ -80,7 +80,7 @@ body {
   align-items: center;
   color: #FFFFFF;
 }
-.house .house_container div .house_container_text p {
+.house .wrapper_house .house_container div .house_container_text p {
   margin-top: 40px;
   max-width: 460px;
   font-family: "Arial";
@@ -92,7 +92,7 @@ body {
   align-items: center;
   color: #CDCDCD;
 }
-.house .house_container div .house_container_text button {
+.house .wrapper_house .house_container div .house_container_text button {
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
@@ -109,19 +109,29 @@ body {
   border-radius: 100px;
   transition: 0.5s;
 }
-.house .house_container div .house_container_text button:hover {
+.house .wrapper_house .house_container div .house_container_text button a {
+  color: #292929;
+}
+.house .wrapper_house .house_container div .house_container_text button:hover {
   background: rgba(0, 0, 0, 0);
   color: #F1CDB3;
   box-shadow: inset 0 0 0 3px #292929;
 }
+.house .wrapper_house .house_container div .house_container_text button:hover a {
+  color: #F1CDB3;
+}
 
 .about {
   background-color: #fff;
+}
+.about .wrapper_about {
+  width: 1280px;
+  margin: auto;
   display: flex;
   justify-content: space-evenly;
   padding: 80px 80px 100px 80px;
 }
-.about h2 {
+.about .wrapper_about h2 {
   margin: 15px -5px;
   max-width: 370px;
   font-family: "Georgia";
@@ -134,7 +144,7 @@ body {
   letter-spacing: 0.06em;
   color: #545454;
 }
-.about p {
+.about .wrapper_about p {
   margin-top: 25px;
   max-width: 430px;
   height: 96px;
@@ -150,12 +160,16 @@ body {
 
 .pets {
   background: #F6F6F6;
+}
+.pets .wrapper_pets {
+  width: 1280px;
+  margin: auto;
   padding: 80px 59px 100px 59px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.pets h2 {
+.pets .wrapper_pets h2 {
   max-width: 400px;
   font-family: "Georgia";
   font-style: normal;
@@ -168,15 +182,15 @@ body {
   letter-spacing: 0.06em;
   color: #545454;
 }
-.pets .pets_container {
+.pets .wrapper_pets .pets_container {
   margin-top: 43px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.pets .pets_container .arrow_right,
-.pets .pets_container .arrow_left {
+.pets .wrapper_pets .pets_container .arrow_right a,
+.pets .wrapper_pets .pets_container .arrow_left a {
   cursor: pointer;
   border: 4px solid #F1CDB3;
   border-radius: 50%;
@@ -185,16 +199,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s;
 }
-.pets .pets_container .arrow_right svg,
-.pets .pets_container .arrow_left svg {
+.pets .wrapper_pets .pets_container .arrow_right a:hover,
+.pets .wrapper_pets .pets_container .arrow_left a:hover {
   transition: 0.5s;
+  background-color: #F1CDB3;
+  border: 4px solid #000000;
 }
-.pets .pets_container .arrow_right svg:hover,
-.pets .pets_container .arrow_left svg:hover {
-  fill: #F1CDB3;
-}
-.pets .pets_container .block_pets {
+.pets .wrapper_pets .pets_container .block_pets a {
   margin: 0 16px;
   width: 270px;
   height: 435px;
@@ -202,10 +215,10 @@ body {
   border-radius: 9px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  transition: 0.4s;
 }
-.pets .pets_container .block_pets h3 {
+.pets .wrapper_pets .pets_container .block_pets a h3 {
   margin: 30px;
   font-family: "Georgia";
   font-style: normal;
@@ -218,7 +231,7 @@ body {
   letter-spacing: 0.06em;
   color: #545454;
 }
-.pets .pets_container .block_pets button {
+.pets .wrapper_pets .pets_container .block_pets a button {
   width: 187px;
   height: 52px;
   border: 2px solid #F1CDB3;
@@ -237,12 +250,19 @@ body {
   color: #292929;
   transition: 0.5s;
 }
-.pets .pets_container .block_pets button:hover {
-  background: #292929;
+.pets .wrapper_pets .pets_container .block_pets a button:hover {
+  background: #F1CDB3;
   color: #ffffff;
   box-shadow: inset 0 0 0 3px #F1CDB3;
 }
-.pets .pets_button {
+.pets .wrapper_pets .pets_container .block_pets a:hover {
+  background: #FFFFFF;
+  transition: 0.4s;
+  -webkit-box-shadow: 7px 8px 34px 7px rgba(34, 60, 80, 0.12);
+  -moz-box-shadow: 7px 8px 34px 7px rgba(34, 60, 80, 0.12);
+  box-shadow: 7px 8px 34px 7px rgba(34, 60, 80, 0.12);
+}
+.pets .wrapper_pets .pets_button {
   margin-top: 77px;
   display: flex;
   flex-direction: column;
@@ -261,25 +281,29 @@ body {
   color: #292929;
   transition: 0.5s;
 }
-.pets button:hover {
+.pets .wrapper_pets button:hover {
   background: #292929;
   color: #F1CDB3;
   box-shadow: inset 0 0 0 3px #F1CDB3;
 }
-.pets .arrow_left,
-.pets .arrow_right {
+.pets .wrapper_pets .arrow_left,
+.pets .wrapper_pets .arrow_right {
   position: relative;
-  top: 21px;
+  bottom: 1px;
 }
 
 .help {
   background-color: #fff;
+}
+.help .wrapper_help {
+  width: 1280px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 80px 80px 100px 80px;
 }
-.help h2 {
+.help .wrapper_help h2 {
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
@@ -291,44 +315,44 @@ body {
   letter-spacing: 0.06em;
   color: #545454;
 }
-.help div {
+.help .wrapper_help div {
   width: 100%;
 }
-.help div .bottom_ul {
+.help .wrapper_help div .bottom_ul {
   margin: 0 13px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.help div .top_ul {
+.help .wrapper_help div .top_ul {
   display: flex;
   justify-content: space-between;
   margin: 56px 47px;
 }
-.help div li {
+.help .wrapper_help div li {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.help div li img {
+.help .wrapper_help div li img {
   margin-bottom: 30px;
 }
-.help div li svg {
+.help .wrapper_help div li svg {
   cursor: pointer;
   margin-bottom: 30px;
   transition: 0.5s;
 }
-.help div li svg path {
+.help .wrapper_help div li svg path {
   transition: 0.5s;
 }
-.help div li svg:hover {
+.help .wrapper_help div li svg:hover {
   transform: rotate(25deg);
 }
-.help div li svg:hover path {
+.help .wrapper_help div li svg:hover path {
   fill: #ffd700;
 }
-.help div li p {
+.help .wrapper_help div li p {
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
@@ -339,22 +363,27 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: #545454;
+  cursor: pointer;
 }
 
 .donation {
   background-color: #F6F6F6;
+}
+.donation .wrapper_donation {
+  width: 1280px;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 80px 180px 100px 180px;
 }
-.donation img {
+.donation .wrapper_donation img {
   margin-left: -20px;
 }
-.donation div {
+.donation .wrapper_donation div {
   margin-left: 25px;
 }
-.donation div h2 {
+.donation .wrapper_donation div h2 {
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
@@ -365,7 +394,7 @@ body {
   letter-spacing: 0.06em;
   color: #545454;
 }
-.donation div p {
+.donation .wrapper_donation div p {
   margin-top: 20px;
   font-family: "Georgia";
   font-style: normal;
@@ -379,7 +408,10 @@ body {
   /* color-dark-l */
   color: #545454;
 }
-.donation div .card {
+.donation .wrapper_donation div .card {
+  margin: 0;
+}
+.donation .wrapper_donation div .card a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -387,14 +419,17 @@ body {
   width: 349px;
   height: 43px;
   padding: 0 0;
-  /* color-primary */
   background: #F1CDB3;
   border-radius: 9px;
+  transition: 0.5s;
 }
-.donation div .card img {
+.donation .wrapper_donation div .card a svg {
   margin: 0 15px 0 0;
 }
-.donation div .card p {
+.donation .wrapper_donation div .card a svg path {
+  transition: 0.5s;
+}
+.donation .wrapper_donation div .card a p {
   margin: 0;
   font-family: "Georgia";
   font-style: normal;
@@ -407,8 +442,23 @@ body {
   letter-spacing: 0.06em;
   /* color-dark-l */
   color: #545454;
+  transition: 0.5s;
 }
-.donation div .tiny_text {
+.donation .wrapper_donation div .card a:hover {
+  transition: 0.5s;
+  background: #f3bc81;
+  -webkit-box-shadow: 14px 2px 30px -5px rgba(34, 60, 80, 0.22);
+  -moz-box-shadow: 14px 2px 30px -5px rgba(34, 60, 80, 0.22);
+  box-shadow: 14px 2px 30px -5px rgba(34, 60, 80, 0.22);
+}
+.donation .wrapper_donation div .card a:hover p {
+  transition: 0.5s;
+  color: #FFFFFF;
+}
+.donation .wrapper_donation div .card a:hover svg path {
+  fill: #FFFFFF;
+}
+.donation .wrapper_donation div .tiny_text {
   margin-top: 20px;
   font-family: "Arial";
   font-style: italic;
@@ -423,37 +473,46 @@ body {
 }
 
 .footer {
-  padding: 40px 40px 0 40px;
   background-image: url("./src/assets/shelter/footer-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer .wrapper_footer {
+  width: 1280px;
+  margin: auto;
+  padding: 40px 40px 0 40px;
   display: flex;
   justify-content: space-between;
 }
-.footer .footer_block {
+.footer .wrapper_footer .footer_block {
   margin-top: 20px;
 }
-.footer .footer_block h3 {
-  font: 20px/24px fantasy;
-  font-weight: bold;
-  content: "Foo Bar";
-  /* color-light-xl */
+.footer .wrapper_footer .footer_block h3 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
 }
-.footer .footer_block .footer_data {
+.footer .wrapper_footer .footer_block .footer_data {
   margin: 38px 13px 0 0;
 }
-.footer .footer_block .footer_data a {
+.footer .wrapper_footer .footer_block .footer_data a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   color: #F1CDB3;
   transition: 0.5s;
 }
-.footer .footer_block .footer_data a svg {
+.footer .wrapper_footer .footer_block .footer_data a svg {
   margin-right: 20px;
 }
-.footer .footer_block .footer_data a svg path {
+.footer .wrapper_footer .footer_block .footer_data a svg path {
   transition: 0.5s;
 }
-.footer .footer_block .footer_data a p {
+.footer .wrapper_footer .footer_block .footer_data a p {
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
@@ -463,16 +522,12 @@ body {
   letter-spacing: 0.06em;
   /* color-primary */
   color: #F1CDB3;
+  transition: 0.5s;
 }
-.footer .footer_block .footer_data a:hover {
-  padding: 10px;
-  border: 2px solid #FFFFFF;
-  border-radius: 4px;
-}
-.footer .footer_block .footer_data a:hover svg path {
+.footer .wrapper_footer .footer_block .footer_data a:hover svg path {
   fill: #FFFFFF;
 }
-.footer .footer_block .footer_data a:hover p {
+.footer .wrapper_footer .footer_block .footer_data a:hover p {
   color: #FFFFFF;
 }
 
