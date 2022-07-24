@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Pets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../normalize.css">
     <link rel="stylesheet" href="pets.css">
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon"/>
@@ -10,16 +11,43 @@
 <body>
 
 <header>
+    <div class="menu_bar">
+        <div class="menu_logo">
+            <h2 class="menu_navigation-logo"><a href="../index.html#house">Cozy House</a></h2>
+            <p>Shelter for pets in Boston</p>
+            <div class="burger_menu">
+                <div class="top"></div>
+                <div class="middle"></div>
+                <div class="button"></div>
+            </div>
+            <ul class="menu_navigation">
+                <li><a href="../index.html#about">About the shelter</a></li>
+                <li class="open_menu"><a href="#">Our pets</a></li>
+                <li><a href="../index.html#help">Help the shelter</a></li>
+                <li><a href="#footer">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div tabindex="1" class="dark-bg"></div>
+
     <div class="header">
         <div class="header_container">
             <div class="header_welcome">
                 <h2><a href="../index.html#house">Cozy House</a></h2>
                 <p>Shelter for pets in Boston</p>
             </div>
+
+            <div class="burger">
+                <div class="top"></div>
+                <div class="middle"></div>
+                <div class="button"></div>
+            </div>
+
             <nav>
                 <ul class="header_navigation">
                     <li><a href="../index.html#about">About the shelter</a></li>
-                    <li><a href="#pets">Our pets</a></li>
+                    <li><a href="#pets" class="active">Our pets</a></li>
                     <li><a href="../index.html#help">Help the shelter</a></li>
                     <li><a href="#footer">Contacts</a></li>
                 </ul>
@@ -34,57 +62,57 @@
         <h1 id="house">Our friends who<br>are looking for a house</h1>
 
         <div class="block_pets">
-            <div>
-                <a href="">
+            <div id='5' class="pet">
+                <a href="#">
                     <img src="./assets/pets/pets-katrine.jpg" alt="Katrine">
                     <p>Katrine</p>
                     <button>Learn more</button>
                 </a>
             </div>
-            <div>
-                <a href="">
+            <div id='1' class="pet">
+                <a href="#">
                     <img src="./assets/pets/pets-jennifer.jpg" alt="Jennifer">
                     <p>Jennifer</p>
                     <button>Learn more</button>
                 </a>
             </div>
-            <div>
-                <a href="">
+            <div id='3' class="pet">
+                <a href="#">
                     <img src="./assets/pets/pets-woody.jpg" alt="Woody">
                     <p>Woody</p>
                     <button>Learn more</button>
                 </a>
             </div>
-            <div>
-                <a href="">
+            <div id='2' class="pet pets_none_320">
+                <a href="#">
                     <img src="./assets/pets/pets-Sophia.jpg" alt="Sophia">
                     <p>Sophia</p>
                     <button>Learn more</button>
                 </a>
             </div>
-            <div>
-                <a href="">
+            <div id='6' class="pet pets_none_320">
+                <a href="#">
                     <img src="./assets/pets/pets-timmy.jpg" alt="Timmy">
                     <p>Timmy</p>
                     <button>Learn more</button>
                 </a>
             </div>
-            <div>
-                <a href="">
+            <div id='0' class="pet pets_none_320">
+                <a href="#">
                     <img src="./assets/pets/pets-charly.jpg" alt="Charly">
                     <p>Charly</p>
                     <button>Learn more</button>
                 </a>
             </div>
-            <div>
-                <a href="">
+            <div id='4' class="pet pets_none">
+                <a href="#">
                     <img src="./assets/pets/pets-scarlet.jpg" alt="Scarlett">
                     <p>Scarlett</p>
                     <button>Learn more</button>
                 </a>
             </div>
-            <div>
-                <a href="">
+            <div id='7' class="pet pets_none">
+                <a href="#">
                     <img src="./assets/pets/pets-Freddie.jpg" alt="Freddie">
                     <p>Freddie</p>
                     <button>Learn more</button>
@@ -94,11 +122,11 @@
 
         <nav>
             <ul>
-                <li><a href="" class="grey"><<</a></li>
-                <li><a href="" class="grey"><</a></li>
-                <li><a href="">1</a></li>
-                <li><a href="">></a></li>
-                <li><a href="">>></a></li>
+                <li class="grey first"><<</li>
+                <li class="grey left"><</li>
+                <li class="number active_number">1</li>
+                <li class="right">></li>
+                <li class="last">>></li>
             </ul>
         </nav>
     </section>
@@ -140,16 +168,16 @@
                                 fill="#F1CDB3"/>
                     </svg>
 
-                    <p>+13 674 567 75 54</p>
+                    <p class="number">+13 674 567 75 54</p>
                 </a>
             </div>
         </div>
         <div class="footer_block">
-            <h3>
+            <h3 class="location_block">
                 We are waiting <br> for your visit
             </h3>
 
-            <div class="footer_data">
+            <div class="footer_data boston">
                 <a href="https://www.google.ru/maps/place/1+Central+St,+Boston,+MA+02109,+США/@42.3585558,-71.0569203,17z/data=!3m1!4b1!4m5!3m4!1s0x89e370868bc2ce7b:0x82fa7db94f5fea9e!8m2!3d42.3585519!4d-71.0547263">
                     <svg width="22" height="32" viewBox="0 0 22 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -163,7 +191,7 @@
                     <p>1 Central Street, Boston <br>(entrance from the store)</p>
                 </a>
             </div>
-            <div class="footer_data">
+            <div class="footer_data london">
                 <a href="https://www.google.ru/maps/place/Парк+Юг/@51.4733452,-0.1597063,12.52z/data=!4m9!1m2!2m1!1s18+South+Park,+London+!3m5!1s0x48760f79376fa0e3:0x202ac3af5c1ea4ec!8m2!3d51.4691953!4d-0.1941945!15sChUxOCBTb3V0aCBQYXJrLCBMb25kb26SAQRwYXJr">
                     <svg width="22" height="32" viewBox="0 0 22 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -183,5 +211,10 @@
     </div>
 
 </footer>
+<div class="modal"></div>
+
+<script src="./burgerPets.js"></script>
+<script src="./popupPets.js"></script>
+<script src="./pagination.js"></script>
 </body>
 </html>
